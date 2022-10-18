@@ -1,10 +1,35 @@
-- 👋 Hi, I’m @Mrco1401
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+# Bevvies - Auto Mint Bot
 
-<!---
-Mrco1401/Mrco1401 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+### Dev
+
+```shell
+yarn install
+yarn start-local-network # Starts Hardhat Network on localhost
+yarn deploy-local-contract # Deploy a sample smart contract to localhost
+yarn dev # Starts the bot service and connects to Hardhat Network on localhost
+```
+
+### Testing
+
+```
+yarn start-local-network # Starts Hardhat Network on localhost
+yarn test:integration # Run integration tests
+```
+
+### Build / Deploy
+
+```shell
+yarn build # Compile ts files to js in dist folder
+yarn start # Starts the bot service and connects to Ethereum Mainnet
+```
+
+### Other commands
+
+```shell
+npx eslint '**/*.{js,ts}'
+npx eslint '**/*.{js,ts}' --fix
+npx prettier '**/*.{json,sol,md}' --check
+npx prettier '**/*.{json,sol,md}' --write
+npx solhint 'contracts/**/*.sol'
+npx solhint 'contracts/**/*.sol' --fix
+```
